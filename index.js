@@ -2,6 +2,9 @@ let A = document.getElementById("A");
 let B = document.getElementById("B");
 let voteA = 0;
 let voteB = 0;
+document.getElementById("A_count").innerHTML = 0;
+document.getElementById("B_count").innerHTML = 0;
+
 A.addEventListener("click", function () {
   voteA++;
   document.getElementById("A_count").innerHTML = voteA;
@@ -27,7 +30,7 @@ function show() {
     document.getElementById("picB").style.boxShadow = "10px 10px green";
     document.getElementById("picA").style.boxShadow = "10px 10px red";
   }
-  if (voteA === voteB) {
+  if (voteA === voteB && voteA !== 0 && voteB !== 0) {
     document.getElementById("Declare").innerHTML = "Drawn";
     document.getElementById("picB").style.boxShadow = "10px 10px yellow";
     document.getElementById("picA").style.boxShadow = "10px 10px yellow";
