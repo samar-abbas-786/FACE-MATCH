@@ -13,6 +13,7 @@ body{
     background-image: url(image/thunder2.jpg);
     background-size: cover;
     background-position: center;
+    color: white;
 }
 .container{
     height: 35rem;
