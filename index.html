@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaceMatch/jb47/?Wk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input placeholder="Enter Seconds" type="number" id="set_Time" />
+    <h2 id="Declare"></h2>
+    <div class="container">
+      <div class="face1">
+        <h1><input type="text" placeholder="Write Name" id="A_name" /></h1>
+        <h2 id="A_count"></h2>
+
+        <div class="pic1" id="picA">
+          <input id="imageInput" type="file" />
+          <img
+            style="position: relative; height: 20rem; width: 20rem"
+            id="selectedImage"
+          />
+        </div>
+        <button class="btn" id="A">VOTE A</button>
+      </div>
+
+      <p style="font-size: 25px">VS</p>
+      <div class="face2">
+        <h1><input type="text" placeholder="Write Name" id="B_name" /></h1>
+        <h2 id="B_count"></h2>
+
+        <div class="pic2" id="picB">
+          <input id="imageInputB" type="file" />
+          <img
+            style="position: relative; height: 20rem; width: 20rem"
+            id="selectedImageB"
+            alt=""
+          />
+        </div>
+        <button class="btn" id="B">VOTE B</button>
+      </div>
+    </div>
+    <button class="btn1" onclick="start()">START</button>
+  </body>
+  <script src="index.js"></script>
+  <script src="app.js"></script>
+</html>

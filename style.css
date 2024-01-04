@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 35rem;
+    width: 70rem;
+    /* border: 2px solid rgb(249, 4, 4); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.face1,.face2{
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.pic1,.pic2{
+    height: 22rem;
+    width: 20rem;
+    border: 1px solid black;
+    
+
+}
+.pic1{
+    /* background-image:url(image/pic.jpg) ; */
+    background-size: cover;
+    background-position: center;
+}
+.pic2{
+    /* background-image:url(image/samar.jpeg) ; */
+    background-size: cover;
+    background-position: center;
+}
+.btn,.btn1{
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+     border: 2px solid rgb(0, 0, 0);
+     font-weight: bold;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(5, 155, 30);
+}
+input{
+    height: 40px;
+    width: 220px;
+    /* border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    font-size: 21px;
+    text-align: center;
+}
+#A_count,#B_count{
+    height: 40px;
+    width: 60px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
